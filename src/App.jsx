@@ -6,6 +6,9 @@ import Search from "./components/Search";
 import Header from "./components/Header";
 
 function App() {
+  useEffect(() => {
+    document.title = "Sticky Notes 🍆🍆";
+  }, []);
   const [notes, setNotes] = useState([
     {
       id: nanoid(),
